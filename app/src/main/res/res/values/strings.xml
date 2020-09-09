@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">Insowa</string>
+
+    <!--images descriptions -->
+    <string name="logo">logo</string>
+    <string name="background_image">background image</string>
+    <string name="back_arrow">back arrow</string>
+
+    <!-- OTP verification -->
+    <string name="otp_verification">OTP Verification</string>
+    <string name="otp_verification_description">We have sent a verification code to your\nregistered email ID. Please enter the\nverification code below.</string>
+    <string name="did_not_receive_the_otp">Did not receive the OTP?</string>
+    <string name="resend_otp">Resend OTP</string>
+    <string name="verify">verify</string>
+    <string name="back">Back</string>
+    <string name="countdown_timer_value">00:%1$d</string>
+
+    <!-- Login verification -->
+    <string name="sign_in_your_account">Sign in your account</string>
+    <string name="start_your_journey_here">Start your journey here.</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="do_not_have_a_account">Don’t have a account?</string>
+    <string name="sign_in">sign in</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+
+    <!-- Create account -->
+    <string name="create_your_account">Create your account</string>
+    <string name="please_enter_your_email_id_to_sign_up">Please enter your email ID to Sign Up</string>
+    <string name="get_otp">get otp</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="Sign_in_caps">SIGN IN</string>
+
+    <!-- Forgot password -->
+    <string name="forgot_password_description">Please enter your email ID. We will send\nyou an OTP to reset your password.</string>
+
+    <!-- Welcome -->
+    <string name="congratulations">Congratulations!</string>
+    <string name="welcome_description">Welcome to INSOWA.\nPlease Sign-In and start to Automate,\nAnalyse and Achieve.</string>
+    <string name="let_s_start">let\'s start</string>
+
+    <!-- Reset password -->
+    <string name="reset_password">Reset password</string>
+    <string name="please_set_your_password_here">Please set your password here.</string>
+    <string name="new_password">New Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="tooltip_title">Your password must</string>
+    <string name="tooltip_content">• be at least 8 characters long\n• include both upper and lower case characters \n• contain at least one numeric character \n• contain at least one special character</string>
+
+    <!-- Registration -->
+    <string name="let_s_get_started">Let\'s Get Started</string>
+    <string name="registration_description">You are just a few steps away to register</string>
+    <string name="register_now">register now</string>
+    <string name="tnc">I have read and agree to <annotation type="tnc_link">Terms &amp; Conditions</annotation> and <annotation type="policy_link">Private Policy</annotation></string>
+    <string name="your_name">Your Name</string>
+    <string name="organization_name">Organization Name</string>
+    <string name="mobile_number">Mobile Number</string>
+
+    <!-- Common -->
+    <string name="automate_analyze_achieve">Automate. Analyze. Achieve</string>
+    <string name="get_social_with_us_follow_us_on">Get social with us. Follow us on:</string>
+    <string name="successfully_changed">Successfully Changed!!</string>
+
+</resources>

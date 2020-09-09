@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
+    android:paddingHorizontal="32dp"
+    tools:context=".ui.verifyUser.VerifyUserActivity">
+
+    <ImageView
+        android:id="@+id/back_arrow_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:contentDescription="@string/back_arrow"
+        android:paddingVertical="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_back_arrow_white" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/poppins"
+        android:lineSpacingExtra="5sp"
+        android:text="@string/back"
+        android:textColor="#ffffff"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="@+id/back_arrow_iv"
+        app:layout_constraintStart_toEndOf="@+id/back_arrow_iv"
+        app:layout_constraintTop_toTopOf="@+id/back_arrow_iv" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:lineSpacingExtra="11sp"
+        android:text="@string/otp_verification"
+        android:textColor="#ffffff"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/poppins"
+        android:gravity="center"
+        android:lineSpacingExtra="7sp"
+        android:text="@string/otp_verification_description"
+        android:textColor="#ffffff"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/otp_1_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/otp_1_layout"
+        style="@style/TextInputLayoutStyle"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        app:boxStrokeColor="@color/boxStrokeColorWhite"
+        app:layout_constraintBottom_toTopOf="@+id/verify_otp_btn"
+        app:layout_constraintEnd_toStartOf="@+id/otp_2_layout"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/otp_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:maxLines="1"
+            android:textColor="#FFF" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/otp_2_layout"
+        style="@style/TextInputLayoutStyle"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        app:boxStrokeColor="@color/boxStrokeColorWhite"
+        app:layout_constraintBottom_toBottomOf="@+id/otp_1_layout"
+        app:layout_constraintEnd_toStartOf="@+id/otp_3_layout"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/otp_1_layout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/otp_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:maxLines="1"
+            android:textColor="#FFF" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/otp_3_layout"
+        style="@style/TextInputLayoutStyle"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        app:boxStrokeColor="@color/boxStrokeColorWhite"
+        app:layout_constraintBottom_toBottomOf="@+id/otp_2_layout"
+        app:layout_constraintEnd_toStartOf="@+id/otp_4_layout"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/otp_2_layout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/otp_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:maxLines="1"
+            android:textColor="#FFF" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/otp_4_layout"
+        style="@style/TextInputLayoutStyle"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        app:boxStrokeColor="@color/boxStrokeColorWhite"
+        app:layout_constraintBottom_toBottomOf="@+id/otp_3_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/otp_3_layout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/otp_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:maxLines="1"
+            android:textColor="#FFF" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/verify_otp_btn"
+        style="@style/ButtonStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/verify"
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/otp_1_layout" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/poppins"
+        android:lineSpacingExtra="5sp"
+        android:text="@string/did_not_receive_the_otp"
+        android:textColor="#ffffff"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/verify_otp_btn" />
+
+    <TextView
+        android:id="@+id/resend_otp_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_bold"
+        android:lineSpacingExtra="5sp"
+        android:text="@string/resend_otp"
+        android:textColor="#ffffff"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

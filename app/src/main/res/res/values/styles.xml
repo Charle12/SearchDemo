@@ -1,0 +1,236 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="ToolbarTheme" parent="ThemeOverlay.MaterialComponents.ActionBar">
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <item name="android:textColorSecondary">#EEEEEE</item>
+    </style>
+
+    <!-- The launcher theme. It sets the main window background to the launch_screen drawable -->
+    <style name="LauncherTheme" parent="Theme.MaterialComponents.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_background</item>
+    </style>
+
+    <style name="TabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/colorTextSubtitle</item>
+        <item name="fontFamily">@font/poppins_semibold</item>
+    </style>
+
+
+    <style name="ButtonStyle" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="backgroundTint">@color/colorAccent</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/poppins_bold</item>
+        <item name="android:padding">12dp</item>
+    </style>
+
+    <style name="ButtonStyleSmall" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="backgroundTint">@color/colorAccent</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+    </style>
+
+
+    <style name="AddButtonStyle" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="backgroundTint">@color/colorAccent</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/poppins_bold</item>
+        <item name="android:padding">8dp</item>
+    </style>
+
+    <style name="FlatButtonTextStyle">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/colorTextTitle</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/poppins_bold</item>
+    </style>
+
+    <style name="IntroTitleStyle">
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+        <item name="android:textColor">@color/colorTextTitle</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="IntroDescriptionStyle">
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textColor">@color/colorTextSubtitle</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="TitleWhiteAppBarStyle">
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="fontWeight">@font/poppins_semibold</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="EditTextLabelStyle">
+        <item name="fontFamily">@font/poppins</item>
+        <item name="android:textColor">@color/colorEditTextLabel</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="EditTextErrorStyle">
+        <item name="fontFamily">@font/poppins</item>
+        <item name="android:textColor">@color/colorEditTextError</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="AppButtonTextStyle" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+        <item name="android:color">#000000</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="HomeTitleStyle">
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+        <item name="android:color">#000000</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="HomeSubTitleStyle">
+        <item name="fontFamily">@font/poppins</item>
+        <item name="fontWeight">@font/poppins</item>
+        <item name="android:color">#5F5F5F</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="ProductNameStyle">
+        <item name="fontFamily">@font/poppins_medium</item>
+        <item name="android:textColor">@color/colorTextTitle</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="PriceBeforeDiscountStyle">
+        <item name="fontFamily">@font/poppins</item>
+        <item name="android:textColor">@color/colorTextTitle</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="PriceAfterDiscountStyle">
+        <item name="fontFamily">@font/poppins_semibold</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="CategoryNameStyle">
+        <item name="fontFamily">@font/poppins</item>
+        <item name="android:color">#5F5F5F</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="CategoryUpToOffStyle">
+        <item name="fontFamily">@font/poppins</item>
+        <item name="android:color">@color/colorAccent</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="ProductOffStyle">
+        <item name="fontFamily">@font/poppins</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="EditTextStyle" parent="android:Widget.EditText">
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:background">@drawable/bg_edit_text</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:paddingRight">12dp</item>
+        <item name="android:textColor">#000</item>
+    </style>
+
+    <style name="OrderStatusStyle" >
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:textColor">#000</item>
+    </style>
+
+    <style name="AccountStatusStyle" >
+        <item name="android:fontFamily">@font/poppins_bold</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="AccountButtonStyle" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="backgroundTint">@color/colorWhite</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/poppins</item></style>
+
+    <style name="AddressedtStatusStyle" >
+        <item name="android:fontFamily">@font/poppins_bold</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="AddressedtChnageStatusStyle" >
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="HomeStatusStyle" >
+        <item name="android:fontFamily">@font/poppins_bold</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="background">@color/colorWhite</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="RightButtonStyle" >
+        <item name="android:fontFamily">@font/poppins_bold</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+
+    <style name="AppThemeGreen" parent="PayumoneyAppTheme">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="colorButtonNormal">@color/colorPrimary</item>
+        <item name="alertDialogTheme">@style/AlertDialogStyle_green</item>
+        <item name="actionMenuTextColor">@color/white</item>
+    </style>
+
+
+    <style name="AlertDialogStyle_green" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/primary_blue</item>
+        <item name="android:textColorPrimary">@color/payumoney_text_color</item>
+    </style>
+
+
+    <style name="OrderIdStyle">
+        <item name="fontFamily">@font/poppins_semibold</item>
+        <item name="android:textColor">@color/colorTextTitle</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="OrderIdDetailsTextStyle">
+        <item name="fontFamily">@font/poppins</item>
+        <item name="android:textColor">#8d8d8d</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="OrderStatusTextStyle">
+        <item name="fontFamily">@font/poppins_bold</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+</resources>
